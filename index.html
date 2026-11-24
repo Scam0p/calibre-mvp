@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f7f5" />
+  <meta name="description" content="CALIBRE — a private personal science lab. Test small habits, learn from your own evidence." />
+  <title>CALIBRE — Your personal science lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="CALIBRE home"><span class="brand-symbol">c<span>.</span></span><span class="brand-word">calibre<small>PERSONAL SCIENCE LAB</small></span></a>
+      <div class="nav-caption">YOUR SPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#overview"><span class="nav-icon">⌂</span>Overview</a>
+        <a class="nav-link" href="#experiments"><span class="nav-icon">◎</span>Experiments</a>
+        <a class="nav-link" href="#insights"><span class="nav-icon">⌁</span>Insights</a>
+        <a class="nav-link" href="#calibration"><span class="nav-icon">◷</span>Calibration</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="privacy-card"><span class="privacy-icon">⌑</span><div><strong>Your data stays here</strong><small>Local demo · saved in this browser</small></div><span class="privacy-check">✓</span></div>
+        <div class="team-mark"><span class="team-dot"></span> POWERHOUSE <span>·</span> wHACKiest 2026</div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="overview">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-symbol">c<span>.</span></span><span class="brand-word">calibre</span></div>
+        <div class="breadcrumb">YOUR SPACE <span>/</span> OVERVIEW</div>
+        <div class="top-actions"><span class="demo-tag"><i></i> DEMO ENVIRONMENT</span><button class="profile-button" aria-label="Profile">J</button></div>
+      </header>
+
+      <section class="greeting-row">
+        <div><div class="date-line" id="todayLabel">YOUR PERSONAL LAB</div><h1>Good to see you, <span>Jeevan.</span></h1><p class="subhead">Small experiments. Honest answers. A better understanding of you.</p></div>
+        <div class="streak-chip"><span class="streak-flame">✳</span><div><strong id="streakCount">03 day streak</strong><small>Consistency over perfection</small></div></div>
+      </section>
+
+      <section class="hero-card">
+        <div class="hero-copy"><div class="hero-kicker"><span class="pulse-dot"></span> YOUR PERSONAL SCIENCE LAB</div><h2>Your body.<br><em>Your evidence.</em></h2><p>Stop guessing what works. Run a small experiment and let your own data tell the story.</p><a class="hero-link" href="#experiments">Explore your experiments <span>↗</span></a></div>
+        <div class="hero-visual" aria-hidden="true"><div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div><div class="visual-orbit orbit-c"></div><div class="visual-core"><span>N</span><strong>1</strong><small>ONE PERSON</small></div><span class="orbit-label label-one">OBSERVE</span><span class="orbit-label label-two">TEST</span><span class="orbit-label label-three">LEARN</span></div>
+        <div class="hero-index">01 <span>—</span> PERSONAL DISCOVERY</div>
+      </section>
+
+      <section class="section-heading"><div><div class="section-kicker">AT A GLANCE</div><h2>Your progress, not a scorecard.</h2></div><span class="data-note"><i></i> Synthetic sample data</span></section>
+      <section class="metric-grid" aria-label="Progress summary">
+        <article class="metric-card metric-featured"><div class="metric-top"><span class="metric-label">CALIBRATION</span><span class="metric-icon">◉</span></div><div class="metric-value"><strong id="calibrationScore">78</strong><span>/100</span></div><div class="metric-foot"><span class="metric-trend">↗ Learning in progress</span><span class="metric-caption">Brier-style demo score</span></div><div class="metric-spark" aria-hidden="true"><svg viewBox="0 0 220 42" preserveAspectRatio="none"><path d="M0 33 C22 30 25 21 45 25 S75 31 94 18 S125 26 145 12 S183 19 220 3"/><path class="spark-fill" d="M0 33 C22 30 25 21 45 25 S75 31 94 18 S125 26 145 12 S183 19 220 3 V42 H0Z"/></svg></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-label">EXPERIMENTS COMPLETED</span><span class="metric-icon icon-blue">⌁</span></div><div class="metric-value"><strong id="experimentsRun">03</strong></div><div class="metric-foot"><span class="metric-caption">Every test adds a data point.</span></div><div class="mini-progress"><span style="width:60%" id="experimentProgress"></span></div><div class="progress-label"><span>Monthly goal</span><strong id="goalText">3 of 5</strong></div></article>
+        <article class="metric-card"><div class="metric-top"><span class="metric-label">RESEARCH MOMENTUM</span><span class="metric-icon icon-orange">✳</span></div><div class="metric-value"><strong id="momentumValue">Building</strong></div><div class="metric-foot"><span class="metric-caption">Show up. Observe. Repeat.</span></div><div class="momentum-dots"><i class="done"></i><i class="done"></i><i class="done"></i><i></i><i></i><i></i><i></i></div><div class="progress-label"><span>Consistency markers</span><strong id="markerText">3 / 7</strong></div></article>
+      </section>
+
+      <section class="workspace-grid" id="experiments">
+        <article class="surface experiment-builder">
+          <div class="surface-heading"><div><div class="section-kicker">THE EXPERIMENT STUDIO</div><h2>What would you like to test?</h2><p>Choose a low-risk habit and record what you expect.</p></div><span class="step-count">01 <i>/</i> 03</span></div>
+          <div class="protocol-list" role="group" aria-label="Choose an experiment">
+            <button class="protocol-option selected" data-protocol="caffeine"><span class="protocol-symbol coffee">◒</span><span class="protocol-copy"><strong>Earlier caffeine cut-off</strong><small>Move your last caffeine earlier in the day.</small></span><span class="protocol-check">✓</span></button>
+            <button class="protocol-option" data-protocol="walk"><span class="protocol-symbol walk">↗</span><span class="protocol-copy"><strong>Evening walk</strong><small>Add a gentle walk to your evening routine.</small></span><span class="protocol-check">✓</span></button>
+            <button class="protocol-option" data-protocol="screen"><span class="protocol-symbol screen">◐</span><span class="protocol-copy"><strong>Screen-off before bed</strong><small>Put screens away before your usual bedtime.</small></span><span class="protocol-check">✓</span></button>
+          </div>
+          <div class="belief-block"><div class="belief-heading"><label for="belief">How confident are you this will help your sleep?</label><strong id="beliefValue">70<span>%</span></strong></div><input id="belief" type="range" min="0" max="100" value="70" step="5"><div class="range-ends"><span>Just a guess</span><span>Very confident</span></div></div>
+          <div class="experiment-actions"><button id="runExperiment" class="button-primary">Run sample experiment <span>→</span></button><span class="action-caption">~ 10 seconds · simulated result</span></div>
+          <div class="safety-note"><span>ⓘ</span> This prototype uses illustrative synthetic observations, not your actual health data.</div>
+        </article>
+
+        <article class="surface reveal-card" id="insights">
+          <div class="surface-heading"><div><div class="section-kicker">THE LATEST REVEAL</div><h2>A signal worth exploring.</h2></div><span class="reveal-mark">✳</span></div>
+          <div class="reveal-context"><span class="context-line"></span><span id="revealProtocol">EARLIER CAFFEINE CUT-OFF</span></div>
+          <div class="reveal-stat"><strong id="revealNumber">+14</strong><span>min</span></div>
+          <p class="reveal-description" id="revealText">In this sample scenario, the earlier caffeine cut-off is associated with 14 additional minutes of sleep.</p>
+          <div class="comparison-chart"><div class="chart-head"><span>ILLUSTRATIVE SLEEP DURATION</span><span>MINUTES</span></div><div class="chart-row"><span>Baseline</span><div class="chart-track"><i style="width:68%"></i></div><b id="baselineValue">420</b></div><div class="chart-row"><span>Test night</span><div class="chart-track"><i class="test-bar" id="testBar" style="width:72%"></i></div><b id="testValue">434</b></div></div>
+          <div class="verdict-row"><span class="verdict-pill" id="verdictPill"><i></i> PROMISING SIGNAL</span><span class="verdict-disclaimer">Not a causal conclusion</span></div>
+        </article>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="surface ledger-card" id="calibration">
+          <div class="surface-heading"><div><div class="section-kicker">YOUR BELIEF LEDGER</div><h2>Prediction meets observation.</h2><p>Calibration improves when you compare what you expected with what happened.</p></div><span class="ledger-icon">◷</span></div>
+          <div class="ledger-table" id="ledger"><div class="ledger-row ledger-header"><span>YOUR BELIEF</span><span>OBSERVATION</span><span>READOUT</span></div><div class="ledger-row"><span><strong>Caffeine affects my sleep</strong><small>70% confidence</small></span><span><strong>+14 min</strong><small>Sample observation</small></span><span class="readout positive">Signal</span></div><div class="ledger-row"><span><strong>A walk helps me unwind</strong><small>60% confidence</small></span><span><strong>+8 min</strong><small>Sample observation</small></span><span class="readout positive">Signal</span></div><div class="ledger-row"><span><strong>Screens delay my sleep</strong><small>80% confidence</small></span><span><strong>Unclear</strong><small>Sample observation</small></span><span class="readout neutral">Unclear</span></div></div>
+        </article>
+        <article class="surface journey-card">
+          <div class="surface-heading"><div><div class="section-kicker">YOUR RESEARCH JOURNEY</div><h2>Progress worth keeping.</h2></div><span class="journey-spark">✧</span></div>
+          <div class="journey-progress"><div class="journey-progress-head"><span>First five experiments</span><strong id="journeyCount">3 / 5</strong></div><div class="journey-track"><i id="journeyBar" style="width:60%"></i></div></div>
+          <div class="milestone-list"><div class="milestone complete"><span class="milestone-icon">✓</span><div><strong>Curiosity sparked</strong><small>Start your first experiment</small></div><span class="milestone-state">UNLOCKED</span></div><div class="milestone complete"><span class="milestone-icon">✓</span><div><strong>Pattern spotter</strong><small>Complete three experiments</small></div><span class="milestone-state">UNLOCKED</span></div><div class="milestone" id="nextMilestone"><span class="milestone-icon">03</span><div><strong>Evidence builder</strong><small>Complete five experiments</small></div><span class="milestone-state">NEXT UP</span></div></div>
+          <div class="journey-foot">The reward is better self-knowledge. Never a health outcome.</div>
+        </article>
+      </section>
+
+      <footer class="footer"><a class="footer-brand" href="#overview">calibre<span>.</span></a><span>AN EXPERIMENT IN UNDERSTANDING YOU</span><span>POWERHOUSE · wHACKiest 2026</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
