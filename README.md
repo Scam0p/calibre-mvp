@@ -62,7 +62,7 @@ calibre-mvp/
 
 ## Team
 
-- Jeevan — Team Lead
+- Jeevan — Team Lead 1EP24IC015
 - Arjun V — 1EP24IC007
 - Harsh Jangir — 1EP24IC012
 
